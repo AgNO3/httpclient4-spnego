@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>eu.agno3.maven</groupId>
+		<artifactId>agno3-tools-parent</artifactId>
+		<version>0.0.8</version>
+	</parent>
+	
+	<groupId>eu.agno3.util</groupId>
+	<artifactId>httpclient4-spnego</artifactId>
+	<version>0.0.4</version>
+	<name>SPNEGO Support for Apache HttpClient 4.3</name>
+	
+	<description>Adds preemptive SPNEGO authentication support to Apache HttpClient 4.3</description>
+	
+	<scm>
+		<developerConnection>scm:svn:https://svn.intra.agno3.eu/repos/tools/httpclient41-spnego/trunk</developerConnection>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<id>agno3-release-oss</id>
+			<url>https://maven.intra.agno3.eu/content/repositories/releases-oss/</url>
+		</repository>
+		<snapshotRepository>
+			<id>agno3-snapshot-oss</id>
+			<url>https://maven.intra.agno3.eu/content/repositories/snapshots-oss/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3.5</version>
+		</dependency>
+	</dependencies>
+
+	
+</project>
